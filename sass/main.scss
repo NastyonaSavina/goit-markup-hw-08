@@ -1,0 +1,28 @@
+@import "./utils/variables.scss";
+@import "./base/common";
+@import "./base/reset";
+@import "./utils/hidden";
+@import "./utils/mixins";
+
+@import "./components/logo";
+@import "./components/container";
+@import "./components/modal-btn";
+@import "./components/modal-window";
+
+@import "./utils/section";
+
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/benefits";
+@import "./layout/about";
+@import "./layout/our-team";
+@import "./layout/clients";
+@import "./layout/footer";
+
+@import "./layout/portfolio";
+
+
+
+
+

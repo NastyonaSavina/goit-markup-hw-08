@@ -1,0 +1,25 @@
+.modal-btn {
+    border-radius: 4px;
+    padding: 9px 31px;
+    min-width: 200px;
+    min-height: 50px;
+    border: 1px solid transparent;
+
+
+    font-family: inherit;
+    @include font(700, 16px, 1.88, 0.06em);
+ 
+    color: var(--primary-text-color-theme-dark);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+
+
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}

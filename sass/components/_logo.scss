@@ -1,0 +1,18 @@
+.logo {
+    font-family: var(--logo-font-family);
+    @include font (700, 24px, 1.67, null);
+    color: var(--accent-color);
+
+    @include desktop{
+        @include font (700, 26px, 1.19, null);
+    }
+}
+
+.logo__text--dark {
+    color: var(--primary-text-color-theme-light);
+
+}
+
+.logo__text--white {
+    color: var(--primary-text-color-theme-dark);
+}
