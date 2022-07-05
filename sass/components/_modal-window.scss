@@ -164,6 +164,8 @@
 
 .policy-link {
     color: var(--accent-color);
+    margin-left: 2px;
+
 }
 
 .checkbox-area {
@@ -182,14 +184,6 @@
 
 
 
-.icon-checkbox {
-    margin-right: 8px;
-    width: 16px;
-    height: 15px;
-    border: 2px solid var(--backgound-color);
-    border-radius: 3px;
-    transition: border 250ms var(--timing-function), background-color 250ms var(--timing-function);
-}
 
 .checkbox:focus+.icon-checkbox {
     border: 2px solid var(--accent-color);
@@ -207,6 +201,35 @@
     font-size: 12px;
     line-height: 1.17;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+
+    &::before{
+        content:"";
+        width: 16px;
+        height: 15px;
+       
+        margin-right: 8px;
+
+        border: 2px solid var(--primary-text-color-theme-light);
+        border-radius: 3px;
+
+        transition: border 250ms var(--timing-function), background-color 250ms var(--timing-function);
+        
+        .checkbox:checked + & {
+            background-color: var(--accent-color);
+            border: 2px solid var(--accent-color);
+            background-image: url(../images/check.png);
+
+        }
+        .checkbox:focus + &,
+        .checkbox:hover + &{
+            border-color: var(--accent-color);
+        }
+
+    }
  
 
     @include desktop{
