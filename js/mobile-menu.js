@@ -1,14 +1,32 @@
+// (() => {
+//   const refs = {
+//     openMenuBtn: document.querySelector("[mob-menu-open]"),
+//     closeMenuBtn: document.querySelector("[mob-menu-close]"),
+//     modal: document.querySelector("[mob-menu]"),
+//   };
+
+//   refs.openMenuBtn.addEventListener("click", toggleModal);
+//   refs.closeMenuBtn.addEventListener("click", toggleModal);
+
+//   function toggleModal() {
+//     refs.modal.classList.toggle("is-hidden");
+//   }
+// })();
+
+
 (() => {
   const refs = {
-    openMenuBtn: document.querySelector("[mob-menu-open]"),
-    closeMenuBtn: document.querySelector("[mob-menu-close]"),
-    modal: document.querySelector("[mob-menu]"),
+    openMenuBtn: document.querySelector('.menu-open-btn'),
+    closeMenuBtn: document.querySelector('.close-mob-btn'),
+    menu: document.querySelector('.mob-menu-block'),
+    body: document.querySelector('body'),
   };
 
-  refs.openMenuBtn.addEventListener("click", toggleModal);
-  refs.closeMenuBtn.addEventListener("click", toggleModal);
+  refs.openMenuBtn.addEventListener('click', toggleMenu);
+  refs.closeMenuBtn.addEventListener('click', toggleMenu);
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
+  function toggleMenu() {
+    refs.menu.classList.toggle('is-hidden');
+    refs.body.classList.toggle('no-scroll');
   }
 })();
