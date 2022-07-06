@@ -9,6 +9,12 @@
 }
 
 .modal-window {
+
+    @media screen and (max-width: 449.98px){
+        width:98%;
+    };
+        
+    
     width: 450px;
     min-height: 609px;
 
@@ -169,12 +175,15 @@
 }
 
 .checkbox-area {
+
+
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 31px;
     transition: border 250ms var(--timing-function);
     cursor: pointer;
+    width: 100%;
 
 @include desktop{
     margin-bottom: 30px;
@@ -184,26 +193,19 @@
 
 
 
-
-.checkbox:focus+.icon-checkbox {
-    border: 2px solid var(--accent-color);
-
-}
-
-
-
-.checkbox:checked +.icon-checkbox {
-    background-color: var(--accent-color);
-    border: none;
-}
-
 .checkbox-text{
+
     font-size: 12px;
     line-height: 1.17;
     cursor: pointer;
     display: flex;
-    justify-content: space-between;
     align-items:center;
+
+    @media  screen and (max-width:459.98px) {
+        flex-wrap:wrap;
+        font-size: calc(.4rem + 1vmin);
+        min-height: 35px;
+    }
 
 
     &::before{
@@ -225,7 +227,8 @@
 
         }
         .checkbox:focus + &,
-        .checkbox:hover + &{
+        .checkbox:hover + & {
+           
             border-color: var(--accent-color);
         }
 

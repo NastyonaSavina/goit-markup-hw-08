@@ -36,14 +36,21 @@
 
 
    .contacts {
-       display: flex;
+
+
+    @media screen and (max-width: 767.98px) {
+            display: none;
+        }
        flex-direction: column;
        justify-content: center;
        align-items: flex-start;
        gap: 10px;
-       margin-left: 84px;
+       margin-left: auto;
+
+       
 
        @include desktop{
+        display: flex;
         flex-direction: row;
         gap:30px;
         margin-left: auto;
@@ -51,11 +58,35 @@
 
    }
 
-   .nav__list {
-        margin-left: 88px;
+   .contacts__item:first-child{
+    @include tablet{
+    padding-top: 20px;
+    }
 
-        @media screen and (max-width: 767px) {
+    @include desktop{
+        padding-top: 0;
+    }
+   }
+
+
+   .contacts__item:last-child {
+       @include tablet {
+           padding-bottom: 20px;
+       }
+
+       @include desktop {
+           padding-bottom: 0;
+       }
+   }
+
+   .nav__list {
+        
+        @media screen and (max-width: 767.98px) {
                 display: none;
+            }
+
+        @include tablet {
+                margin-left: 88px;
             }
         @include desktop{
             margin-left: 93px;
@@ -108,10 +139,7 @@
    }
 
 
-   .contacts__item:not(:last-child){
-    margin-right: 50px;
-   }
- 
+
    .nav_link {
        display: flex;
        padding-top: 32px;
@@ -172,7 +200,8 @@
     fill: var(--primary-text-color-theme-light);
     transition: fill 250ms var(--timing-function);
 
-    @media screen and (min-width: 768px) {
+  
+    @media screen and (min-width: 767.98px) {
             display: none;
         }
 
@@ -192,6 +221,10 @@
     width: 100vw;
     height: 100vh;
     z-index: 1;
+    overflow: hidden;
+    
+
+    transition: opacity 300ms, visibility 300ms;
 
     padding: 48px 40px;
     .container{
@@ -199,7 +232,6 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
-        overflow-y: auto;
     }
     
   }
@@ -226,6 +258,12 @@
         @include font(500, 40px, 1.18, 00.02em);
         color: var(--primary-text-color-theme-light);
         transition: color 250ms var(--timing-function);
+
+        @media screen and (max-width: 479.98px) {
+            font-size: calc(.8rem + 3vmax)
+            }
+
+        
     }
     .mob-menu__item:not(:last-child){
         margin-bottom: 32px;
@@ -243,28 +281,68 @@
         margin-bottom: 64px;
 
     }
-    .mob-contacts__item:not(:last-child){
-        margin-bottom: 32px;
-    }
+    
+    
     .mob-contacts-tel{
         @include font (500, 34px, 1.18, 0.02em);
         color: var(--accent-color);
+        display: block;
+        margin-bottom: 32px;
+
+        @media screen and (max-width: 479.98px) {
+                font-size: calc(.8rem + 2vmax)
+            }
+
+
         
     }
     .mob-contacts-mail{
         @include font (500, 24px, 1.17, 0.02em);
+       
+        @media screen and (max-width: 479.98px) {
+                font-size: calc(.8rem + 1vmax)
+            }
+
     }
     .mob-soc-list{
         display: flex;
+        gap: 10px;
+
+        @media screen and (max-width: 479.98px) {
+                flex-wrap: wrap;
+               
+            }
     }
     .mob-soc-link{
         @include font(500, 18px, 1.22, 0.02em);
         color: var(--accent-color);
+
+        @media screen and (max-width: 479.98px) {
+                font-size: calc(.8rem + 1vmin)
+            }
+
     }
-    .mob-soc-item:not(:last-child){
-        padding-right: 10px;
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+
+    .mob-soc-item{
+        @media screen and (max-width: 479.98px) {
+                    width: calc((100% - 30px) / 2);
+                    border-right: none;
+                    border-left: 1px solid rgba(33, 33, 33, 0.2);
+                    padding-left: 10px;
+                }
+        
+        @media screen and (min-width: 480px){
+                border-left: 1px solid rgba(33, 33, 33, 0.2);
+                padding-left: 10px;
+
+        }
+            
     }
-    .mob-soc-item:not(:first-child){
-        padding-left: 10px;
+
+    .mob-soc-item:first-child{
+        @media screen and (min-width: 480px) {
+                padding-left: 0;
+                border-left: none;
+            }
     }
