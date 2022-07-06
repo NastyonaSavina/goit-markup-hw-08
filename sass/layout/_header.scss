@@ -64,6 +64,7 @@
 
        @include desktop{
         display: flex;
+        align-items: center;
         flex-direction: row;
         gap:30px;
         margin-left: auto;
