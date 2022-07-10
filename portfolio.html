@@ -1,502 +1,709 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet" 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио студия вебдизайна</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header-block">
-        <div class="container header-nav">
-            <nav class="nav">
-                <a class="link logo nav__logo" href="./index.html" lang="en">
-                    Web<span class="logo__text logo__text--dark">Studio</span>
-                </a>
-                <ul class="list nav__list">
-                    <li class="nav__item">
-                        <a class="link nav_link" href="./index.html">Студия</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="link nav_link nav_link--active" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="link nav_link" href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="list contacts">
-    
-                <li class="contacts__item">
-                    <a class="contacts__link contacts__link--white-theme link" href="mailto:info@devstudio.com">
-                        <svg class="contacts__icon" width="16" height="12">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-    
-                <li class="contacts__item ">
-                    <a class="contacts__link contacts__link--white-theme link" href="tel:+380961111111">
-                        <svg class="contacts__icon" width="10" height="16">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-            </ul>
-            <button type="button" class="menu-open-btn">
-                <svg width="40" height="40">
-                    <use href="./images/icons.svg#icon-mob-menu"></use>
-                </svg>
-            </button>
-        </div>
-        <div class="mob-menu-block is-hidden">
-            <div class="container">
-                <button type="button" class="close-mob-btn">
-                    <svg width="40" height="40">
-                        <use href="./images/icons.svg#icon-close-mob-menu"></use>
-                    </svg>
-                </button>
-                <ul class="mob-menu__list list">
-                    <li class="mob-menu__item">
-                        <a class="link mob-menu_link" href="./index.html">Студия</a>
-                    </li>
-                    <li class="mob-menu__item">
-                        <a class="link mob-menu_link mob_link--active" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="mob-menu__item">
-                        <a class="link mob-menu_link" href="#">Контакты</a>
-                    </li>
-                </ul>
-                <div class="mob-menu-bottom">
-                    <ul class="list mob-contacts">
-                        <li class="mob-contacts__item">
-                            <a class="mob-contacts__link mob-contacts-tel" href="tel:+380961111111">
-                                +38 096 111 11 11</a>
-                        </li>
-                        <li class="mob-contacts__item">
-                            <a class="mob-contacts__link mob-contacts-mail link" href="mailto:info@devstudio.com">
-                                info@devstudio.com</a>
-                        </li>
-                    </ul>
-                    <ul class="mob-soc-list list">
-                        <li class="mob-soc-item">
-                            <a href="" class="mob-soc-link link">Instagram</a>
-                        </li>
-                        <li class="mob-soc-item">
-                            <a href="" class="mob-soc-link link">Twitter</a>
-                        </li>
-                        <li class="mob-soc-item">
-                            <a href="" class="mob-soc-link link">Facebook</a>
-                        </li>
-                        <li class="mob-soc-item">
-                            <a href="" class="mob-soc-link link">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
-    
-            </div>
-        </div>
-    </header>
-    
-    <main>
-        <section class="section block-portfolio">
-            <div class="container">
-            <h1 class="is-hidden">Портфолио вебстудии</h1>
-
-            <ul class="list type-project-list">
-                <li class="type-project__item">
-                    <button class="selected-menu type-project-menu" type="button">Все</button>
-                </li>
-                <li class="type-project__item">
-                    <button class="type-project-menu" type="button">Веб-сайты</button>
-                </li>
-                <li class="type-project__item">
-                    <button class="type-project-menu" type="button">Приложения</button>
-                </li>
-                <li class="type-project__item">
-                    <button class="type-project-menu" type="button">Дизайн</button>
-                </li>
-                <li class="type-project__item">
-                    <button class="type-project-menu" type="button">Маркетинг</button>
-                </li>
-            </ul>
-            <ul class="list case-list">
-            <li class="item case-item">
-                <a class="link case-link" href="#" target="_blank" rel="noopener noreferrer">
-                    <div class="case-top-wrap">
-                        <picture>
-                            <source srcset="
-                                ./images/portfolio/site-tehnokryak.jpg 1x,
-                                ./images/portfolio/site-tehnokryak-2x.jpg 2x
-                                " media="(min-width: 1200px)" />
-                        
-                            <source srcset="
-                                ./images/portfolio/site-tehnokryak-tab.jpg 1x,
-                                ./images/portfolio/site-tehnokryak-tab-2x.jpg 2x
-                                " media="(min-width: 768px)" />
-                            <source srcset="
-                                ./images/portfolio/site-tehnokryak-mob.jpg 1x,
-                                ./images/portfolio/site-tehnokryak-mob-2x.jpg 2x
-                                " media="(min-width: 320px)" />
-                        
-                            <img class="case-foto" src="./images/portfolio/site-tehnokryak-mob.jpg" alt="сайт Технокряк"/>
-                        </picture>
-                        <p class="case-top-text">
-                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                            получить
-                            исчерпывающие сведения о компании или частном лице.
-                        </p>
-                    </div>
-                    <div class="case-info">
-                        <h2 class="case">Технокряк</h2>
-                        <p class="type-case">Веб-сайт</p>
-                    </div>
-                </a>
+      <div class="container header-nav">
+        <nav class="nav">
+          <a class="link logo nav__logo" href="./index.html" lang="en">
+            Web<span class="logo__text logo__text--dark">Studio</span>
+          </a>
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a class="link nav_link" href="./index.html">Студия</a>
             </li>
-               <li class="item case-item">
-                    <a class="link case-link" href="#" target="_blank" rel="noopener noreferrer">
-                        <div class="case-top-wrap">
-                            <picture>
-                                <source srcset="
-                                    ./images/portfolio/design-orlean.jpg 1x,
-                                    ./images/portfolio/design-orlean-2x.jpg 2x
-                                    " media="(min-width: 1200px)" />
-                            
-                                <source srcset="
-                                    ./images/portfolio/design-orlean-tab.jpg 1x,
-                                    ./images/portfolio/design-orlean-tab-2x.jpg 2x
-                                    " media="(min-width: 768px)" />
-                                <source srcset="
-                                    ./images/portfolio/design-orlean-mob.jpg 1x,
-                                    ./images/portfolio/design-orlean-mob-2x.jpg 2x
-                                    " media="(min-width: 320px)" />
-                            
-                                <img class="case-foto" src="./images/portfolio/design-orlean-mob.jpg" alt="фото постера New Orlean vs Golden Star "/>
-                            </picture>
-                            <p class="case-top-text"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                            получить исчерпывающие сведения о компании или частном лице.
-                            </p>
-                        </div>
-                        <div class="case-info">
-                            <h2 class="case">Постер New Orlean vs Golden Star</h2>
-                            <p class="type-case">Дизайн</p>
-                        
-                        </div>
-                    </a>
-               </li>
-               <li class="item case-item">
-                    <a class="link case-link" href="#" target="_blank" rel="noopener noreferrer">
-                        <div class="case-top-wrap">
-                            <picture>
-                                <source srcset="
-                                    ./images/portfolio/app-seafood.jpg 1x,
-                                    ./images/portfolio/app-seafood-2x.jpg 2x
-                                    " media="(min-width: 1200px)" />
-                            
-                                <source srcset="
-                                    ./images/portfolio/app-seafood-tab.jpg 1x,
-                                    ./images/portfolio/app-seafood-tab-2x.jpg 2x
-                                    " media="(min-width: 768px)" />
-                                <source srcset="
-                                    ./images/portfolio/app-seafood-mob.jpg 1x,
-                                    ./images/portfolio/app-seafood-mob-2x.jpg 2x
-                                    " media="(min-width: 320px)" />
-                            
-                                <img class="case-foto" src="./images/portfolio/app-seafood-mob.jpg" alt="фото приложения Ресторан Seafood " />
-                            </picture>
-                            <p class="case-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                            получить исчерпывающие сведения о компании или частном лице.
-                            </p>
-                        </div>
-                        <div class="case-info">
-                            <h2 class="case">Ресторан Seafood</h2>
-                            <p class="type-case">Приложение</p>
-                        
-                        </div>
-                    </a>
-               </li>
-               <li class="item case-item">
-                    <a class="link case-link" href="#" target="_blank" rel="noopener noreferrer">
-                        <div class="case-top-wrap">
-                            <picture>
-                                <source srcset="
-                                    ./images/portfolio/marketing-prime.jpg 1x,
-                                    ./images/portfolio/marketing-prime-2x.jpg 2x
-                                    " media="(min-width: 1200px)" />
-                            
-                                <source srcset="
-                                    ./images/portfolio/marketing-prime-tab.jpg 1x,
-                                    ./images/portfolio/marketing-prime-tab-2x.jpg 2x
-                                    " media="(min-width: 768px)" />
-                                <source srcset="
-                                    ./images/portfolio/marketing-prime-mob.jpg 1x,
-                                    ./images/portfolio/marketing-prime-mob-2x.jpg 2x
-                                    " media="(min-width: 320px)" />
-                            
-                                <img class="case-foto" src="./images/portfolio/marketing-prime-mob.jpg" 
-                            alt="фото наушников по проекту Prime" />
-                            </picture>
-                            <p class="case-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                            получить исчерпывающие сведения о компании или частном лице.
-                            </p>
-                        </div>
-                        <div class="case-info">
-                            <h2 class="case">Проект Prime</h2>
-                            <p class="type-case">Маркетинг</p>
-                        </div>
-                    </a>
-               </li>
-               <li class="item case-item">
-                    <a class="link case-link" href="#" target="_blank" rel="noopener noreferrer">
-                        <div class="case-top-wrap">
-                            <picture>
-                                <source srcset="
-                                        ./images/portfolio/app-boxes.jpg 1x,
-                                        ./images/portfolio/app-boxes-2x.jpg 2x
-                                        " media="(min-width: 1200px)" />
-                                
-                                    <source srcset="
-                                        ./images/portfolio/app-boxes-tab.jpg 1x,
-                                        ./images/portfolio/app-boxes-tab-2x.jpg 2x
-                                        " media="(min-width: 768px)" />
-                                    <source srcset="
-                                        ./images/portfolio/app-boxes-mob.jpg 1x,
-                                        ./images/portfolio/app-boxes-mob-2x.jpg 2x
-                                        " media="(min-width: 320px)" />
-                                
-                                    <img class="case-foto" src="./images/portfolio/app-boxes-mob.jpg"
-                                            alt="фото приложения Boxes" />
-                            </picture>
-                            <p class="case-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                            получить исчерпывающие сведения о компании или частном лице.
-                            </p>
-                        </div>
-                        <div class="case-info">
-                            <h2 class="case">Проект Boxes</h2>
-                            <p class="type-case">Приложение</p>
-                        </div>
-                    </a>
-               </li>
-               <li class="item case-item">
-                    <a class="link case-link" href="#" target="_blank" rel="noopener noreferrer">
-                        <div class="case-top-wrap">
-                            <picture>
-                                <source srcset="
-                                    ./images/portfolio/site-inspiration.jpg 1x,
-                                    ./images/portfolio/site-inspiration-2x.jpg 2x
-                                    " media="(min-width: 1200px)" />
-                            
-                                <source srcset="
-                                    ./images/portfolio/site-inspiration-tab.jpg 1x,
-                                    ./images/portfolio/site-inspiration-tab-2x.jpg 2x
-                                    " media="(min-width: 768px)" />
-                                <source srcset="
-                                    ./images/portfolio/site-inspiration-mob.jpg 1x,
-                                    ./images/portfolio/site-inspiration-mob-2x.jpg 2x
-                                    " media="(min-width: 320px)" />
-                            
-                                <img class="case-foto" src="./images/portfolio/site-inspiration-mob.jpg" alt="фото cайта Inspiration has no Borders" />
-                            </picture>
-                            <p class="case-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                            получить исчерпывающие сведения о компании или частном лице.
-                            </p>
-                        </div>
-                        <div class="case-info">
-                            <h2 class="case" lang="en">Inspiration has no Borders</h2>
-                            <p class="type-case">Веб-сайт</p>
-                        </div>
-                    </a>
-               </li>
-               <li class="item case-item">
-                    <a class="link case-link" href="#" target="_blank" rel="noopener noreferrer">
-                        <div class="case-top-wrap">
-                            <picture>
-                                <source srcset="
-                                    ./images/portfolio/design-limited.jpg 1x,
-                                    ./images/portfolio/design-limited-2x.jpg 2x
-                                    " media="(min-width: 1200px)" />
-                            
-                                <source srcset="
-                                    ./images/portfolio/design-limited-tab.jpg 1x,
-                                    ./images/portfolio/design-limited-tab-2x.jpg 2x
-                                    " media="(min-width: 768px)" />
-                                <source srcset="
-                                    ./images/portfolio/design-limited-mob.jpg 1x,
-                                    ./images/portfolio/design-limited-mob-2x.jpg 2x
-                                    " media="(min-width: 320px)" />
-                            
-                                <img class="case-foto" src="./images/portfolio/design-limited-mob.jpg"
-                                    alt="фото издания Limited Edition "/>
-                            </picture>
-                            <p class="case-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                            получить исчерпывающие сведения о компании или частном лице.
-                            </p>
-                        </div>
-                        <div class="case-info">
-                            <h2 class="case">Издание Limited Edition</h2>
-                            <p class="type-case">Дизайн</p>
-                        </div>
-                    </a>
-               </li>
-               <li class="item case-item">
-                    <a class="link case-link" href="#" target="_blank" rel="noopener noreferrer">
-                        <div class="case-top-wrap">
-                            <picture>
-                                <source srcset="
-                                    ./images/portfolio/marketing-lab.jpg 1x,
-                                    ./images/portfolio/marketing-lab-2x.jpg 2x
-                                    " media="(min-width: 1200px)" />
-                                
-                                <source srcset="
-                                    ./images/portfolio/marketing-lab-tab.jpg 1x,
-                                    ./images/portfolio/marketing-lab-tab-2x.jpg 2x
-                                    " media="(min-width: 768px)" />
-                                <source srcset="
-                                    ./images/portfolio/marketing-lab-mob.jpg 1x,
-                                    ./images/portfolio/marketing-lab-mob-2x.jpg 2x
-                                    " media="(min-width: 320px)" />
-                                
-                                <img class="case-foto" src="./images/portfolio/marketing-lab-mob.jpg" alt="фото лейба по проекту LAB"/>
-                            </picture>
-                            <p class="case-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                            получить исчерпывающие сведения о компании или частном лице.
-                            </p>
-                        </div>
-                        <div class="case-info">
-                            <h2 class="case">Проект LAB</h2>
-                            <p class="type-case">Маркетинг</p>
-                        </div>
-                    </a>
-               </li>
-               <li class="item case-item">
-                    <a class="link case-link" href="#" target="_blank" rel="noopener noreferrer">
-                        <div class="case-top-wrap">
-                            <picture>
-                                <source srcset="
-                                    ./images/portfolio/app-business.jpg 1x,
-                                    ./images/portfolio/app-business-2x.jpg 2x
-                                    " media="(min-width: 1200px)" />
-                            
-                                <source srcset="
-                                    ./images/portfolio/app-business-tab.jpg 1x,
-                                    ./images/portfolio/app-business-tab-2x.jpg 2x
-                                    " media="(min-width: 768px)" />
-                                <source srcset="
-                                    ./images/portfolio/app-business-mob.jpg 1x,
-                                    ./images/portfolio/app-business-mob-2x.jpg 2x
-                                    " media="(min-width: 320px)" />
-                            
-                                <img class="case-foto" src="./images/portfolio/app-business-mob.jpg"  alt="фото приложения Growing Business "/>
-                            </picture>
-                            <p class="case-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                            получить исчерпывающие сведения о компании или частном лице.
-                            </p>
-                        </div>
-                        <div class="case-info">
-                            <h2 class="case" lang="en">Growing Business</h2>
-                            <p class="type-case">Приложение</p>
-                        </div>
-                    </a>
-               </li>
-           </ul>
-        </div>
-        </section>
+            <li class="nav__item">
+              <a class="link nav_link nav_link--active" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="link nav_link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list contacts">
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--white-theme link"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
 
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--white-theme link"
+              href="tel:+380961111111"
+            >
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <button type="button" class="menu-open-btn">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu-block is-hidden">
+        <div class="container">
+          <button type="button" class="close-mob-btn">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-close-mob-menu"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+              <a class="link mob-menu_link" href="./index.html">Студия</a>
+            </li>
+            <li class="mob-menu__item">
+              <a
+                class="link mob-menu_link mob_link--active"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a class="link mob-menu_link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="mob-menu-bottom">
+            <ul class="list mob-contacts">
+              <li class="mob-contacts__item">
+                <a
+                  class="mob-contacts__link  link mob-contacts-tel"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contacts__item">
+                <a
+                  class="mob-contacts__link mob-contacts-mail link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">Instagram</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">Twitter</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">Facebook</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section block-portfolio">
+        <div class="container">
+          <h1 class="is-hidden">Портфолио вебстудии</h1>
+
+          <ul class="list type-project-list">
+            <li class="type-project__item">
+              <button class="selected-menu type-project-menu" type="button">
+                Все
+              </button>
+            </li>
+            <li class="type-project__item">
+              <button class="type-project-menu" type="button">Веб-сайты</button>
+            </li>
+            <li class="type-project__item">
+              <button class="type-project-menu" type="button">
+                Приложения
+              </button>
+            </li>
+            <li class="type-project__item">
+              <button class="type-project-menu" type="button">Дизайн</button>
+            </li>
+            <li class="type-project__item">
+              <button class="type-project-menu" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="list case-list">
+            <li class="item case-item">
+              <a
+                class="link case-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="case-top-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/site-tehnokryak.jpg    1x,
+                        ./images/portfolio/site-tehnokryak-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/site-tehnokryak-tab.jpg    1x,
+                        ./images/portfolio/site-tehnokryak-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/site-tehnokryak-mob.jpg    1x,
+                        ./images/portfolio/site-tehnokryak-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="case-foto"
+                      src="./images/portfolio/site-tehnokryak-mob.jpg"
+                      alt="сайт Технокряк"
+                    />
+                  </picture>
+                  <p class="case-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="case-info">
+                  <h2 class="case">Технокряк</h2>
+                  <p class="type-case">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="item case-item">
+              <a
+                class="link case-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="case-top-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/design-orlean.jpg    1x,
+                        ./images/portfolio/design-orlean-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/design-orlean-tab.jpg    1x,
+                        ./images/portfolio/design-orlean-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/design-orlean-mob.jpg    1x,
+                        ./images/portfolio/design-orlean-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="case-foto"
+                      src="./images/portfolio/design-orlean-mob.jpg"
+                      alt="фото постера New Orlean vs Golden Star "
+                    />
+                  </picture>
+                  <p class="case-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="case-info">
+                  <h2 class="case">Постер New Orlean vs Golden Star</h2>
+                  <p class="type-case">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="item case-item">
+              <a
+                class="link case-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="case-top-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/app-seafood.jpg    1x,
+                        ./images/portfolio/app-seafood-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/app-seafood-tab.jpg    1x,
+                        ./images/portfolio/app-seafood-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/app-seafood-mob.jpg    1x,
+                        ./images/portfolio/app-seafood-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="case-foto"
+                      src="./images/portfolio/app-seafood-mob.jpg"
+                      alt="фото приложения Ресторан Seafood "
+                    />
+                  </picture>
+                  <p class="case-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="case-info">
+                  <h2 class="case">Ресторан Seafood</h2>
+                  <p class="type-case">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="item case-item">
+              <a
+                class="link case-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="case-top-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/marketing-prime.jpg    1x,
+                        ./images/portfolio/marketing-prime-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/marketing-prime-tab.jpg    1x,
+                        ./images/portfolio/marketing-prime-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/marketing-prime-mob.jpg    1x,
+                        ./images/portfolio/marketing-prime-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="case-foto"
+                      src="./images/portfolio/marketing-prime-mob.jpg"
+                      alt="фото наушников по проекту Prime"
+                    />
+                  </picture>
+                  <p class="case-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="case-info">
+                  <h2 class="case">Проект Prime</h2>
+                  <p class="type-case">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="item case-item">
+              <a
+                class="link case-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="case-top-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/app-boxes.jpg    1x,
+                        ./images/portfolio/app-boxes-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/app-boxes-tab.jpg    1x,
+                        ./images/portfolio/app-boxes-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/app-boxes-mob.jpg    1x,
+                        ./images/portfolio/app-boxes-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="case-foto"
+                      src="./images/portfolio/app-boxes-mob.jpg"
+                      alt="фото приложения Boxes"
+                    />
+                  </picture>
+                  <p class="case-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="case-info">
+                  <h2 class="case">Проект Boxes</h2>
+                  <p class="type-case">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="item case-item">
+              <a
+                class="link case-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="case-top-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/site-inspiration.jpg    1x,
+                        ./images/portfolio/site-inspiration-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/site-inspiration-tab.jpg    1x,
+                        ./images/portfolio/site-inspiration-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/site-inspiration-mob.jpg    1x,
+                        ./images/portfolio/site-inspiration-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="case-foto"
+                      src="./images/portfolio/site-inspiration-mob.jpg"
+                      alt="фото cайта Inspiration has no Borders"
+                    />
+                  </picture>
+                  <p class="case-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="case-info">
+                  <h2 class="case" lang="en">Inspiration has no Borders</h2>
+                  <p class="type-case">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="item case-item">
+              <a
+                class="link case-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="case-top-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/design-limited.jpg    1x,
+                        ./images/portfolio/design-limited-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/design-limited-tab.jpg    1x,
+                        ./images/portfolio/design-limited-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/design-limited-mob.jpg    1x,
+                        ./images/portfolio/design-limited-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="case-foto"
+                      src="./images/portfolio/design-limited-mob.jpg"
+                      alt="фото издания Limited Edition "
+                    />
+                  </picture>
+                  <p class="case-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="case-info">
+                  <h2 class="case">Издание Limited Edition</h2>
+                  <p class="type-case">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="item case-item">
+              <a
+                class="link case-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="case-top-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/marketing-lab.jpg    1x,
+                        ./images/portfolio/marketing-lab-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/marketing-lab-tab.jpg    1x,
+                        ./images/portfolio/marketing-lab-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/marketing-lab-mob.jpg    1x,
+                        ./images/portfolio/marketing-lab-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="case-foto"
+                      src="./images/portfolio/marketing-lab-mob.jpg"
+                      alt="фото лейба по проекту LAB"
+                    />
+                  </picture>
+                  <p class="case-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="case-info">
+                  <h2 class="case">Проект LAB</h2>
+                  <p class="type-case">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="item case-item">
+              <a
+                class="link case-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="case-top-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/app-business.jpg    1x,
+                        ./images/portfolio/app-business-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/app-business-tab.jpg    1x,
+                        ./images/portfolio/app-business-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/app-business-mob.jpg    1x,
+                        ./images/portfolio/app-business-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="case-foto"
+                      src="./images/portfolio/app-business-mob.jpg"
+                      alt="фото приложения Growing Business "
+                    />
+                  </picture>
+                  <p class="case-top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="case-info">
+                  <h2 class="case" lang="en">Growing Business</h2>
+                  <p class="type-case">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container footer-list">
-            <div class="contacts-all">
-                <div class="footer-contacts">
-                    <a class="link logo logo-footer" href="/" lang="en">
-                        Web<span class="logo__text logo__text--white">Studio</span>
-                    </a>
-                    <address>
-                        <ul class="list">
-                            <li class="footer-contact">
-                                <a class="contact-link link" href="https://goo.gl/maps/8Apk7Ke3x36V6BWJ6" target="_blank"
-                                    rel="noopener noreferrer">
-                                    г. Киев, пр-т Леси Украинки, 26
-                                </a>
-                            </li>
-                            <li class="footer-contact">
-                                <a class="contact-link link" href="mailto:info@example.com">info@example.com</a>
-                            </li>
-                            <li>
-                                <a class="contact-link link" href="tel:+380991111111">+38 099 111 11 11</a>
-                            </li>
-                        </ul>
-                    </address>
-                </div>
-    
-    
-                <div class="footer-socials">
-                    <p class="title-soc">Присоединяйтесь</p>
-                    <ul class="contacts-soc-list list">
-                        <li class="soc-item">
-                            <a href="" class="contacts-soc-link">
-                                <svg width="20" height="20">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="soc-item">
-                            <a href="" class="contacts-soc-link">
-                                <svg width="20" height="20">
-                                    <use href="./images/icons.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="soc-item">
-                            <a href="" class="contacts-soc-link">
-                                <svg width="20" height="20">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="soc-item">
-                            <a href="" class="contacts-soc-link">
-                                <svg width="20" height="20">
-                                    <use href="./images/icons.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    
-            <div class="soc-singup">
-                <p class="title-soc soc-label">Подпишитесь на рассылку</p>
-    
-                <form class="email-singup">
-                    <input type="email" class="footer-input" name="user-email" id="email-singup" placeholder="E-mail">
-    
-                    <button type="submit" class="modal-btn sing-up-btn">Подписаться <svg width="24" height="24"
-                            class="icon-send">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg></button>
-                </form>
-    
-    
-            </div>
+      <div class="container footer-list">
+        <div class="contacts-all">
+          <div class="footer-contacts">
+            <a class="link logo logo-footer" href="/" lang="en">
+              Web<span class="logo__text logo__text--white">Studio</span>
+            </a>
+            <address>
+              <ul class="list">
+                <li class="footer-contact">
+                  <a
+                    class="contact-link link"
+                    href="https://goo.gl/maps/8Apk7Ke3x36V6BWJ6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="footer-contact">
+                  <a class="contact-link link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li>
+                  <a class="contact-link link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-socials">
+            <p class="title-soc">Присоединяйтесь</p>
+            <ul class="contacts-soc-list list">
+              <li class="soc-item">
+                <a href="" class="contacts-soc-link">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-item">
+                <a href="" class="contacts-soc-link">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-item">
+                <a href="" class="contacts-soc-link">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-item">
+                <a href="" class="contacts-soc-link">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    
-    
+
+        <div class="soc-singup">
+          <p class="title-soc soc-label">Подпишитесь на рассылку</p>
+
+          <form class="email-singup">
+            <input
+              type="email"
+              class="footer-input"
+              name="user-email"
+              id="email-singup"
+              placeholder="E-mail"
+            />
+
+            <button type="submit" class="modal-btn sing-up-btn">
+              Подписаться
+              <svg width="24" height="24" class="icon-send">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
-
-</body>
-
+  </body>
 </html>
