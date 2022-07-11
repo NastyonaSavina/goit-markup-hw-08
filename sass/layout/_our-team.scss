@@ -74,12 +74,12 @@
     margin-right: 10px;
     border-radius: 50%;
 
+     &:last-child {
+            margin-right: 0;
+        }
 
 }
 
-.soc-item:last-child {
-    margin-right: 0;
-}
 
 
 .employees-soc-link {

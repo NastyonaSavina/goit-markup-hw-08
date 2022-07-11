@@ -103,9 +103,7 @@
    }
 
 
-   .nav__item:not(:last-child) {
-       margin-right: 50px;
-   }
+   
 
 
 
@@ -194,6 +192,10 @@
    .nav__item {
        position: relative;
        padding: 0;
+
+       &:not(:last-child) {
+            margin-right: 50px;
+        }
    }
 
    .nav-link:hover::after,

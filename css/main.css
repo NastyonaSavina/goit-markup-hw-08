@@ -471,10 +471,6 @@ header {
   }
 }
 
-.nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .header-mail {
   display: block;
   text-align: center;
@@ -557,6 +553,9 @@ header {
 .nav__item {
   position: relative;
   padding: 0;
+}
+.nav__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-link:hover::after,
@@ -865,7 +864,6 @@ header {
 .about__item {
   margin-left: auto;
 }
-
 .about__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -971,7 +969,6 @@ header {
   margin-right: 10px;
   border-radius: 50%;
 }
-
 .soc-item:last-child {
   margin-right: 0;
 }

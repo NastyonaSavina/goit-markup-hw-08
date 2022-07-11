@@ -5,11 +5,13 @@
 
 .about__item {
     margin-left: auto;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
-.about__item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .section-about {
     @media screen and (max-width: 1199px){
